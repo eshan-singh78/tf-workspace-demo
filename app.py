@@ -9,7 +9,7 @@ class Handler(BaseHTTPRequestHandler):
         self.end_headers()
 
         response = {
-            "message": "Hello Terraform Workspace Demo!"
+            "message": "Hello Terraform Workspace Demo! - dev"
         }
 
         self.wfile.write(json.dumps(response).encode())
